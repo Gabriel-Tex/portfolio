@@ -1,0 +1,25 @@
+.btn-component{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 8px;
+    border-style: solid 1px;
+    border-width: 2px;
+    border-color: var(--purple-border-solid);
+    background-color: var(--purple-background-box-solid);
+    color: var(--purple-border-solid);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-component:hover{
+    transform: scale(1.1);
+}
+
+.btn-component img{
+    width: 28px;
+}

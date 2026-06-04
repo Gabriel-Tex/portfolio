@@ -1,0 +1,41 @@
+header {
+    position: fixed;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 56px;
+    gap: 24px;
+    border-radius: 12px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    transform: scale(1.05);
+}
+
+.settings{
+    width: 40px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.settings:hover{
+    transform: scale(1.05);
+}

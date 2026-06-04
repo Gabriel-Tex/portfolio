@@ -1,5 +1,20 @@
+:root{
+    --main-font: "Ubuntu", sans-serif;
+    --title-font: "Outfit", sans-serif;
+    --purple-border-gradient: linear-gradient(to top, #D460D0, #893F87);
+    --purple-border-solid: #D460D0;
+    --purple-background-box-solid: #f07fea31;
+    --darkgrey-background-solid: #181818;
+    --darkpurple-background-solid: #341933;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }   
+
+body{
+    font-family: var(--main-font);
+    font-size: 1.25rem;
+}
