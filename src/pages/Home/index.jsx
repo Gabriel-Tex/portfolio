@@ -14,7 +14,6 @@ function Home() {
         <>
             <Header />
 
-
             <main>
                 <HeroSection />
 

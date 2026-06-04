@@ -6,7 +6,7 @@
     border-style: solid 1px;
     border-width: 2px;
     border-color: var(--purple-border-solid);
-    background-color: var(--purple-background-box-solid);
+    background-color: var(--purple-background-box-solid-02);
     color: var(--purple-border-solid);
     display: flex;
     align-items: center;
