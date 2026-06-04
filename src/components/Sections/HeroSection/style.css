@@ -1,5 +1,5 @@
 .hero{
-    background-image: linear-gradient(45deg,#850085, #400040);
+    background-image: var(--purple-header-footer-gradient);
     color: white;
     display: flex;
     align-items: center;

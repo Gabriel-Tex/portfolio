@@ -1,6 +1,7 @@
 :root{
     --main-font: "Ubuntu", sans-serif;
     --title-font: "Outfit", sans-serif;
+    --purple-header-footer-gradient: linear-gradient(45deg,#850085, #400040);
     --purple-border-gradient: linear-gradient(to top, #D460D0, #893F87);
     --purple-border-solid: #D460D0;
     --purple-background-box-solid-02: rgba(240, 127, 234, 0.2);

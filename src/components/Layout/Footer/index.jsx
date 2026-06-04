@@ -5,7 +5,7 @@ function Footer() {
 
   return (
     <footer>
-
+        <p>Ainda em desenvolvimento.</p>
     </footer>
   )
 }
