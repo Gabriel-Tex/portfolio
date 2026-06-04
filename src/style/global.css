@@ -7,8 +7,10 @@
     --grey-border-solid: #BEBEBE;
     --purple-background-box-solid-02: rgba(240, 127, 234, 0.2);
     --purple-background-box-solid-005: rgba(240, 127, 234, 0.05);
+    --purple-background-box-gradient: linear-gradient(to bottom, rgba(138, 73, 135, 0.05), rgba(240, 127, 235, 0.1));
     --darkgrey-background-solid: #181818;
     --darkpurple-background-solid: #341933;
+    --darkpurple-background-gradient: linear-gradient(to bottom, #341933, #0E000E);
 }
 
 *{
@@ -20,4 +22,8 @@
 body{
     font-family: var(--main-font);
     font-size: 1.25rem;
+}
+
+h1{
+    font-family: var(--title-font);
 }
