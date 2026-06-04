@@ -2,12 +2,11 @@ import React from "react"
 import "./style.css"
 import Header from "../../components/Layout/Header"
 import Footer from "../../components/Layout/Footer"
-import TeixeiraIcon from "../../assets/teixeira-icon.png"
-import Button from "../../components/Ui/Button"
-import GithubIcon from "../../assets/github.svg"
-import EmailIcon from "../../assets/baseline-email.svg"
-import CvIcon from "../../assets/cv.svg"
-
+import HeroSection from "../../components/Sections/HeroSection"
+import StackSection from "../../components/Sections/StackSection"
+import SkillsSection from "../../components/Sections/SkillsSection"
+import ProjectsSection from "../../components/Sections/ProjectsSection"
+import AboutMeSection from "../../components/Sections/AboutMeSection"
 
 function Home() {
 
@@ -15,57 +14,18 @@ function Home() {
         <>
             <Header />
 
+
             <main>
-                <section className="hero">
-                    <div className="hero-infos" >
+                <HeroSection />
 
-                        <img className="teixeira-icon" src={TeixeiraIcon} alt="Teixeira icon" />
+                <StackSection />
 
-                        <div className="hero-about-me">
-                            <h1> Gabriel Teixeira </h1>
+                <SkillsSection />
 
-                            <p>
-                                Desenvolvedor Full Stack apaixonado por transformar
-                                problemas em soluções através da tecnologia, com interesse
-                                pelas mais diversas áreas do desenvolvimento web e da engenharia
-                                de software, buscando criar aplicações capazes de gerar impacto real.
-                            </p>
+                <ProjectsSection />
 
-                            <div className="btn-container">
+                <AboutMeSection />
 
-                                <Button
-                                    className="btn-contact"
-                                    id="btn-github"
-                                >
-                                    <img src={GithubIcon} alt="github icon" />
-                                    GitHub
-                                </Button>
-
-                                <Button
-                                    className="btn-contact"
-                                    id="btn-cv"
-                                >
-                                    <img src={CvIcon} alt="curriculum icon" />
-                                    Currículo
-                                </Button>
-
-                                <Button
-                                    className="btn-contact"
-                                    id="btn-email"
-                                >
-                                    <img src={EmailIcon} alt="email icon" />
-                                    Email
-                                </Button>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </section>
-
-                <section className="stack-section">
-                    
-                </section>
             </main >
 
             <Footer />

@@ -20,6 +20,10 @@
     transform: scale(1.1);
 }
 
+.btn-component:active{
+    opacity: 0.5;
+}
+
 .btn-component img{
     width: 28px;
 }
