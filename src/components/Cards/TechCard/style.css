@@ -1,6 +1,7 @@
 .tech-card{
     width: 208px;
     height: 208px;
+    flex-shrink: 0;
     background-color: var(--purple-background-box-solid-005);
     border-style: solid;
     border-width: 1px;

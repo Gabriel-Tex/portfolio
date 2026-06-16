@@ -44,7 +44,8 @@
     width: 100%;
     display: flex;
     padding: 4px 16px;
-    flex-direction: wrap;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
 .description-container {
