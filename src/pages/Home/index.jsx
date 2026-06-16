@@ -6,6 +6,7 @@ import HeroSection from "../../components/Sections/HeroSection"
 import StackSection from "../../components/Sections/StackSection"
 import SkillsSection from "../../components/Sections/SkillsSection"
 import ProjectsSection from "../../components/Sections/ProjectsSection"
+import ExperienceSection from "../../components/Sections/ExperienceSection"
 import AboutMeSection from "../../components/Sections/AboutMeSection"
 
 function Home() {
@@ -22,6 +23,8 @@ function Home() {
                 <SkillsSection />
 
                 <ProjectsSection />
+
+                <ExperienceSection />
 
                 <AboutMeSection />
 

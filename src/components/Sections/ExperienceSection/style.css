@@ -1,0 +1,217 @@
+.experience-section {
+    background-color: var(--darkpurple-background-gradient, #341933);
+    background-image: var(--darkpurple-background-gradient);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 72px 0 80px;
+    gap: 56px;
+}
+
+.exp-timeline-list {
+    width: min(860px, 90%);
+    display: flex;
+    flex-direction: column;
+}
+
+.exp-entry {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 0 20px;
+    padding-bottom: 40px;
+}
+
+.exp-entry--last {
+    padding-bottom: 0;
+}
+
+.exp-timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6px; 
+}
+
+.exp-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--grey-border-solid);
+    border: 2px solid var(--darkpurple-background-solid);
+    flex-shrink: 0;
+    transition: background-color 0.3s;
+}
+
+.exp-dot--active {
+    background-color: var(--purple-border-solid);
+    box-shadow: 0 0 8px rgba(212, 96, 208, 0.7);
+}
+
+.exp-spine {
+    flex: 1;
+    width: 2px;
+    background-color: rgba(190, 190, 190, 0.25);
+    margin-top: 6px;
+}
+
+.exp-card {
+    background-color: var(--purple-background-box-solid-005);
+    border: 1px solid rgba(190, 190, 190, 0.15);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.exp-card:hover {
+    border-color: rgba(212, 96, 208, 0.4);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.exp-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px 20px 20px 20px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.exp-logo-placeholder {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #893F87, #D460D0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--title-font);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    overflow: hidden;
+}
+
+.exp-logo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.exp-meta {
+    flex: 1;
+    min-width: 0; 
+}
+
+.exp-role {
+    font-family: var(--title-font);
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 2px;
+}
+
+.exp-company {
+    font-size: 0.9rem;
+    color: var(--grey-border-solid);
+}
+
+.exp-type {
+    color: var(--purple-border-solid);
+    font-size: 0.85rem;
+}
+
+.exp-dates {
+    font-size: 0.82rem;
+    color: rgba(190, 190, 190, 0.7);
+    margin-top: 4px;
+}
+
+.exp-duration {
+    color: rgba(190, 190, 190, 0.5);
+}
+
+.exp-location {
+    font-size: 0.82rem;
+    color: rgba(190, 190, 190, 0.5);
+    margin-top: 2px;
+}
+
+.exp-toggle {
+    background: none;
+    border: none;
+    color: var(--grey-border-solid);
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 0 4px;
+    line-height: 1;
+    transition: transform 0.3s, color 0.2s;
+    flex-shrink: 0;
+    margin-top: 4px;
+}
+
+.exp-toggle--open {
+    transform: rotate(180deg);
+    color: var(--purple-border-solid);
+}
+
+.exp-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.3s ease;
+    opacity: 0;
+    padding: 0 20px;
+    border-top: 1px solid transparent;
+}
+
+.exp-body--visible {
+    max-height: 600px; 
+    opacity: 1;
+    padding: 16px 20px 20px;
+    border-top-color: rgba(190, 190, 190, 0.1);
+}
+
+.exp-description {
+    font-size: 0.9rem;
+    color: var(--grey-border-solid);
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.exp-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.exp-skill-tag {
+    font-family: var(--title-font);
+    font-size: 0.75rem;
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: 1px solid var(--purple-border-solid);
+    color: var(--purple-border-solid);
+    background-color: var(--purple-background-box-solid-02);
+    white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+    .exp-header {
+        flex-wrap: wrap;
+    }
+
+    .exp-toggle {
+        position: absolute;
+        top: 20px;
+        right: 16px;
+    }
+
+    .exp-card {
+        position: relative;
+    }
+}
